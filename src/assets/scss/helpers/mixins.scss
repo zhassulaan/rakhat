@@ -1,0 +1,46 @@
+@mixin hover-link {
+  transition: color .3s ease;
+  &:hover {
+    color: $main-color;
+  }
+}
+
+@mixin hover-btn {
+  transition: all .3s ease;
+  &:hover {
+    color: #fff;
+    // background-color: $main-color;
+  }
+}
+
+@mixin scroll-hide {
+  overflow: auto;
+  // padding-right: 40px;
+  &::-webkit-scrollbar {
+    background: transparent;
+    display: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    display: none;
+  }
+
+  // Убрать отступ контейнера справа
+  @include md-block() {
+    margin-right: -30px;
+  }
+  @include sm-block() {
+    margin-right: -15px;
+  }
+}
+
+@mixin cursor {
+  cursor: pointer;
+  @include sm-block() {
+    cursor: auto;
+  }
+}
+
+@mixin animation {
+  transition: all .3s ease;
+}

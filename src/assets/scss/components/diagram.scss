@@ -1,0 +1,28 @@
+.diagram-row {
+  width: 100%;
+  .diagram-block {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    .diagram-block-procent {
+      width: 50px;
+      margin: 10px 0px;
+    }
+    .diagram-block-line {
+      width: 100%;
+      margin: 10px 0px;
+      .line-bg {
+        background-color: #eeeeee;
+        width: 100%;
+        height: 5px;
+        display: flex;
+        border-radius: 3px;
+        .line {
+          background-color: #693222;
+          height: 5px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}

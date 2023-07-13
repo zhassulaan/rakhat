@@ -1,0 +1,87 @@
+.footer {
+    background: url(@/assets/images/tracery.png) bottom left repeat-x;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    .footer__row {
+        display: flex;
+        gap: 10px;
+        margin: 50px 0;
+        @include sm-block() {
+            display: block;
+        }
+        .footer__col {
+            flex-grow: 1;
+            width: 33%;
+            @include sm-block() {
+                width: 100%;
+            }
+            .footer__social-text {
+                color: #693222;
+                font-size: 14px;
+            } 
+            .footer__titel {
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .footer__text {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer__slog {
+        text-align: center;
+        width: 100%;
+        margin-top: 75px;
+        margin-bottom: 25px;
+    }
+    .footer__socials {
+        margin-bottom: 16px;
+        display: flex;
+        .footer__social-icon {
+            width: 48px;
+            height: 48px;
+            border: 1px solid #A9A19E;
+            margin-right: 16px;
+            border-radius: 50%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5px;
+            svg {
+                width: 24px;
+                height: 24px;
+                color: #A9A19E;
+                path {
+                    fill: #A9A19E;
+                }
+            }
+        }
+        .social_instagram:hover {
+            border: 1px solid #EF426A;
+            path {
+                fill: #EF426A;
+            }
+        }
+        .social_facebook:hover {
+            border: 1px solid #305094;
+            path {
+                fill: #305094;
+            }
+        }
+        .social_vk:hover {
+            border: 1px solid #44678e;
+            path {
+                fill: #44678e;
+            }
+        }
+        .social_tiktok:hover {
+            border: 1px solid #000;
+            path {
+                fill: #000;
+            }
+        }
+    }
+    
+}

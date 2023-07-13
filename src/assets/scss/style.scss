@@ -1,0 +1,26 @@
+// Libs --------------------------->
+@import "helpers/adaptive-value.scss";
+@import "helpers/smart-grid.scss";
+
+// Helpers --------------------------->
+@import "helpers/vars.scss";
+@import "helpers/fonts.scss";
+@import "helpers/mixins.scss";
+@import "helpers/reset.scss";
+@import "helpers/common.scss";
+@import "helpers/forms.scss";
+@import "helpers/buttons.scss";
+
+// Components --------------------------->
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/popup.scss";
+@import "components/diagram.scss";
+
+@import "components/product-card.scss";
+@import "components/modals.scss";
+
+// Pages --------------------------->
+@import "pages/home.scss";
+@import "pages/about.scss";
+
